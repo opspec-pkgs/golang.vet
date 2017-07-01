@@ -12,10 +12,8 @@ outputs:
 version: 1.0.0
 run:
   container:
-    cmd: [ /cmd.sh ]
+    cmd: [ go, vet, ./... ]
     dirs:
       /go/src: srcDir
-    files:
-      /cmd.sh:
-    image: { ref: 'golang:1.8.3-alpine3.6' }
+    image: { ref: 'golang:1.9beta2-alpine' }
     workDir: /go/src
