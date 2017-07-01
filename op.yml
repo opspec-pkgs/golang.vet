@@ -1,0 +1,21 @@
+name: github.com/opspec-pkgs/golang.vet
+description: vets golang src code
+inputs:
+  srcDir:
+    dir:
+      description: source code
+      default: .
+outputs:
+  srcDir:
+    dir:
+      description: vet'd source code
+version: 1.0.0
+run:
+  container:
+    cmd: [ /cmd.sh ]
+    dirs:
+      /go/src: srcDir
+    files:
+      /cmd.sh:
+    image: { ref: 'golang:1.8.3-alpine3.6' }
+    workDir: /go/src
