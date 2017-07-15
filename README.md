@@ -1,9 +1,9 @@
-# problem statement
+# Problem statement
 vets golang src code
 
 > note: ignores vendor directory
 
-# example usage
+# Example usage
 
 > note: in examples, VERSION represents a version of the golang.vet pkg
 
@@ -29,3 +29,8 @@ op:
   outputs:
     srcDir:
 ```
+
+# Support
+
+join us on [![Slack](https://opspec-slackin.herokuapp.com/badge.svg)](https://opspec-slackin.herokuapp.com/)
+or [open an issue](https://github.com/opspec-pkgs/golang.vet/issues)
