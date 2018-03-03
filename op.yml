@@ -14,6 +14,6 @@ run:
   container:
     cmd: [ go, vet, ./... ]
     dirs:
-      /go/src: srcDir
+      /go/src: $(srcDir)
     image: { ref: 'golang:1.9beta2-alpine' }
     workDir: /go/src
