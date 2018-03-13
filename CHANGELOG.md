@@ -5,7 +5,11 @@ All notable changes will be documented in this file in accordance with
 
 ## \[Unreleased]
 
-## \[1.1.0] - 2018-03-07
+## \[2.0.0] - 2018-03-13
+
+### Changed
+
+- use golang 1.10 vet util
 
 ### Added
 
